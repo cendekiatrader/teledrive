@@ -1,38 +1,28 @@
 # Telegram Drive Website
 
-Landing page statis berbahasa Indonesia untuk memperkenalkan Telegram Drive, proyek open-source yang mengubah akun Telegram menjadi cloud drive lokal.
+Website Telegram Drive sudah dipasang di folder `app/` agar sesuai dengan struktur project/deploy Vercel Anda.
 
-## Fitur halaman
-
-- Hero section dengan CTA menuju rilis dan repositori GitHub.
-- Ringkasan fitur Telegram Drive seperti folder berbasis channel, streaming media, preview PDF, share link, dan dukungan proxy.
-- Alur kerja tiga langkah untuk menyiapkan API Telegram dan menjalankan aplikasi.
-- Instruksi instalasi dari source.
-- FAQ singkat dan interaksi accordion ringan.
-
-## Menjalankan lokal
+## Menjalankan dari root repo
 
 ```bash
 npm run dev
 ```
 
-Buka `http://localhost:5173`.
+Perintah root akan meneruskan eksekusi ke `app/`.
 
-## Build
+## Build dari root repo
 
 ```bash
 npm run build
 ```
 
-Output statis akan dibuat di folder `dist/`.
+Output statis akan dibuat di `app/dist/`.
 
 ## Deploy ke Vercel
 
-Repo ini sudah disiapkan untuk project Vercel yang memakai konfigurasi `vercel.json`:
+Repo ini mendukung dua konfigurasi Vercel:
 
-- Vercel menjalankan `npm run build`.
-- Output statis dibaca dari folder `dist/`.
-- Tidak ada dependency npm yang perlu diunduh, jadi deploy tetap ringan.
+- Jika Vercel memakai root repo sebagai Root Directory, `vercel.json` root akan menjalankan `npm run build` dan membaca output dari `app/dist`.
+- Jika Vercel Anda disetel ke Root Directory `app`, konfigurasi `app/vercel.json` akan menjalankan build di dalam `app` dan membaca output dari `dist`.
 
-Jika project Vercel Anda sudah terhubung ke repo ini, cukup push branch terbaru. Vercel akan otomatis menjalankan build dan mem-publish isi `dist/`.
-
+Dengan begitu, Anda bisa langsung push repo ini tanpa memindahkan file manual.
