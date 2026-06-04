@@ -25,3 +25,14 @@ npm run build
 ```
 
 Output statis akan dibuat di folder `dist/`.
+
+## Deploy ke Vercel
+
+Repo ini sudah disiapkan untuk project Vercel yang memakai konfigurasi `vercel.json`:
+
+- Vercel menjalankan `npm run build`.
+- Output statis dibaca dari folder `dist/`.
+- Tidak ada dependency npm yang perlu diunduh, jadi deploy tetap ringan.
+
+Jika project Vercel Anda sudah terhubung ke repo ini, cukup push branch terbaru. Vercel akan otomatis menjalankan build dan mem-publish isi `dist/`.
+
