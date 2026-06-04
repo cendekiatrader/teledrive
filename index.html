@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Telegram Drive mengubah akun Telegram Anda menjadi cloud drive lokal yang aman, cepat, dan mudah dikelola."
+    />
+    <title>Telegram Drive — Cloud Drive dari Telegram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" aria-label="Navigasi utama">
+        <a class="brand" href="#hero" aria-label="Telegram Drive home">
+          <span class="brand-mark">TD</span>
+          <span>Telegram Drive</span>
+        </a>
+        <nav class="nav-links" aria-label="Bagian halaman">
+          <a href="#fitur">Fitur</a>
+          <a href="#workflow">Cara Kerja</a>
+          <a href="#install">Instalasi</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a class="nav-cta" href="https://github.com/caamer20/Telegram-Drive" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      </header>
+
+      <main>
+        <section id="hero" class="hero-section">
+          <div class="hero-copy">
+            <p class="eyebrow">Open-source desktop app · Tauri · Rust · React</p>
+            <h1>Ubah Telegram menjadi cloud drive tanpa batas.</h1>
+            <p class="hero-lead">
+              Telegram Drive membantu Anda mengunggah, mengatur, men-streaming, dan membagikan file dari
+              akun Telegram sendiri melalui antarmuka seperti file explorer modern.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#install">Mulai Sekarang</a>
+              <a class="secondary-button" href="https://github.com/caamer20/Telegram-Drive/releases" target="_blank" rel="noreferrer">
+                Lihat Rilis
+              </a>
+            </div>
+            <div class="trust-row" aria-label="Sorotan produk">
+              <span>Private by design</span>
+              <span>Cross-platform</span>
+              <span>Local-first API</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Pratinjau dashboard Telegram Drive">
+            <div class="window-card">
+              <div class="window-bar">
+                <span></span><span></span><span></span>
+                <p>telegram-drive://dashboard</p>
+              </div>
+              <div class="dashboard-grid">
+                <aside class="sidebar-card">
+                  <div class="avatar-orb"></div>
+                  <strong>My Telegram Cloud</strong>
+                  <small>12 folder · 2.4 TB indexed</small>
+                  <button>Upload File</button>
+                </aside>
+                <div class="file-panel">
+                  <div class="panel-header">
+                    <div>
+                      <span class="muted">Folder</span>
+                      <h2>Saved Messages</h2>
+                    </div>
+                    <span class="status-pill">Streaming ready</span>
+                  </div>
+                  <div class="file-list">
+                    <article>
+                      <span class="file-icon video">▶</span>
+                      <div><strong>Launch-demo.mp4</strong><small>1.8 GB · Video</small></div>
+                      <em>98%</em>
+                    </article>
+                    <article>
+                      <span class="file-icon image">✦</span>
+                      <div><strong>Design-assets.zip</strong><small>624 MB · Archive</small></div>
+                      <em>Shared</em>
+                    </article>
+                    <article>
+                      <span class="file-icon pdf">PDF</span>
+                      <div><strong>Product-roadmap.pdf</strong><small>43 MB · Document</small></div>
+                      <em>Open</em>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-strip" aria-label="Manfaat utama">
+          <div><strong>∞</strong><span>Penyimpanan via infrastruktur Telegram</span></div>
+          <div><strong>0</strong><span>Server pihak ketiga untuk kunci dan data</span></div>
+          <div><strong>API</strong><span>Endpoint lokal opsional untuk integrasi AI</span></div>
+        </section>
+
+        <section id="fitur" class="section-block">
+          <div class="section-heading">
+            <p class="eyebrow">Fitur unggulan</p>
+            <h2>Semua yang dibutuhkan untuk mengelola file Telegram sebagai drive.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card"><span>01</span><h3>Folder berbasis channel</h3><p>Buat channel privat sebagai folder agar koleksi file tetap rapi dan mudah ditemukan.</p></article>
+            <article class="feature-card"><span>02</span><h3>Drag & drop upload</h3><p>Seret file ke dashboard, pantau antrean transfer, dan lanjutkan pekerjaan tanpa proses rumit.</p></article>
+            <article class="feature-card"><span>03</span><h3>Streaming media</h3><p>Putar video dan audio langsung dari drive tanpa menunggu unduhan penuh selesai.</p></article>
+            <article class="feature-card"><span>04</span><h3>Pratinjau dokumen</h3><p>Buka PDF dengan viewer bawaan dan nikmati thumbnail untuk gambar serta file media.</p></article>
+            <article class="feature-card"><span>05</span><h3>Tautan berbagi aman</h3><p>Bagikan file dengan opsi kata sandi, masa berlaku, serta kontrol pencabutan akses.</p></article>
+            <article class="feature-card"><span>06</span><h3>Proxy & optimasi jaringan</h3><p>Dukungan SOCKS5, MTProto, throttling, dan penyesuaian chunk untuk koneksi yang menantang.</p></article>
+          </div>
+        </section>
+
+        <section id="workflow" class="workflow-section">
+          <div class="section-heading compact">
+            <p class="eyebrow">Cara kerja</p>
+            <h2>Dari kredensial API ke drive siap pakai dalam tiga langkah.</h2>
+          </div>
+          <ol class="workflow-list">
+            <li><strong>Siapkan Telegram API</strong><span>Buat aplikasi di my.telegram.org untuk mendapatkan API ID dan API Hash.</span></li>
+            <li><strong>Login di aplikasi</strong><span>Masukkan kredensial, verifikasi akun, lalu Telegram Drive mengindeks ruang penyimpanan Anda.</span></li>
+            <li><strong>Kelola file</strong><span>Upload, preview, stream, susun folder, dan buat tautan berbagi dari satu dashboard.</span></li>
+          </ol>
+        </section>
+
+        <section id="install" class="install-section">
+          <div>
+            <p class="eyebrow">Instalasi</p>
+            <h2>Jalankan dari source.</h2>
+            <p>
+              Proyek asli membutuhkan Node.js 18+, Rust stable, build tools Tauri sesuai OS, dan kredensial Telegram API.
+            </p>
+          </div>
+          <div class="terminal-card" aria-label="Perintah instalasi">
+            <code>git clone https://github.com/caamer20/Telegram-Drive.git</code>
+            <code>cd Telegram-Drive/app</code>
+            <code>npm install</code>
+            <code>npm run tauri dev</code>
+          </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+          <div class="section-heading compact">
+            <p class="eyebrow">FAQ</p>
+            <h2>Pertanyaan singkat.</h2>
+          </div>
+          <details open>
+            <summary>Apakah data saya dikirim ke server pihak ketiga?</summary>
+            <p>Tidak. Aplikasi dirancang local-first; kredensial dan data tetap berada di perangkat Anda dan layanan Telegram.</p>
+          </details>
+          <details>
+            <summary>Apakah ini aplikasi resmi Telegram?</summary>
+            <p>Bukan. Telegram Drive adalah proyek open-source independen dan tidak berafiliasi dengan Telegram FZ-LLC.</p>
+          </details>
+          <details>
+            <summary>Platform apa saja yang didukung?</summary>
+            <p>Desktop Windows, macOS, Linux, serta build Android beta yang dapat di-sideload dari rilis proyek.</p>
+          </details>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Telegram Drive Website · Dibuat untuk menampilkan proyek open-source Telegram Drive.</p>
+        <a href="https://github.com/caamer20/Telegram-Drive" target="_blank" rel="noreferrer">Kunjungi repositori</a>
+      </footer>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
